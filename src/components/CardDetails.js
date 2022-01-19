@@ -1,5 +1,5 @@
 import './CardDetails.css';
-import './CardMenuAuto.js';
+import './MenuAuto.js';
 
 const CardDetails = (props) => {
 
