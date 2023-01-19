@@ -18,13 +18,12 @@ export class CardMenuAuto extends Component {
         <div>  
             <div class='container-fluid'>
             <OwlCarousel items={3} margin={8} autoplay ={true} >
-            <div><CardDetails  image={Mills} texto="Supply to feed mills" NAvailable="Not Available" request="Request"/></div>  
-            <div><CardDetails  image={Barn} texto="Supply to farms" NAvailable="Not Available" request="Request"/></div>  
-            <div><CardDetails  image={Woman} texto="Supply to Slaughterhouses" NAvailable="Not Available" request="Request"/></div>
-            <div><CardDetails  image={Meet} texto="Meat Offer" NAvailable="Not Available" request="Request"/></div>
-            <div><CardDetails  image={Renderers} texto="Supply to Renderers" NAvailable="Not Available"
-request="Request"/></div>  
-            <div><CardDetails  image={Machine} texto="Machine and Equipment" NAvailable="Not Available" request="Request"/></div>  
+            <div><CardDetails  image={Mills} texto="Supply to feed mills"/></div>  
+            <div><CardDetails  image={Barn} texto="Supply to farms"/></div>  
+            <div><CardDetails  image={Woman} texto="Supply to Slaughterhouses"/></div>
+            <div><CardDetails  image={Meet} texto="Meat Offer"/></div>
+            <div><CardDetails  image={Renderers} texto="Supply to Renderers"/></div>  
+            <div><CardDetails  image={Machine} texto="Machine and Equipment"/></div>  
                 </OwlCarousel>  
         </div>  
       </div>  

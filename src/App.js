@@ -1,6 +1,7 @@
 //components
 import Header from './components/Header';
 import Corpo from './components/Corpo';
+import Footer from './components/Footer';
 
 
 
@@ -15,6 +16,7 @@ function App() {
       
       <Header />
       <Corpo />
+      <Footer />
   
     </div>
   );

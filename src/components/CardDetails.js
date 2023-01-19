@@ -8,8 +8,8 @@ const CardDetails = (props) => {
             <img src={props.image} ></img>
             <div className='text'>
                 <h2>{props.texto}</h2>
-                <h4>{props.NAvailable}</h4>
-                <a href="#">{props.request}</a>
+                <h4>Not Available</h4>
+                <a href="#">Request</a>
             </div>
         </div>
     )

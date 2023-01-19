@@ -1,6 +1,7 @@
 .Corpo{
     --tw-bg-opacity: 1;
     background-color: rgb(243 245 248/var(--tw-bg-opacity));
+    margin-right: -3em;
 }
 
 
@@ -784,24 +785,25 @@ p {
 .content button{
   background-color: inherit;
   border: 0;
-  border-radius: 1500px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 
+
 .imageCardCompras{
   height: 134px;
   width: 201px;
   margin-top: 1.25rem;
+  margin-left: -0.4em;
 }
 
 @media (min-width: 768px){
 .imageCardCompras {
     height: 187px;
-    width: 280px;
-    margin-top: 0;
+    width: 290px;
+    margin-top: -0.5em;
   }
 }
 .textCard{
@@ -972,3 +974,47 @@ p {
   font-size: 1.25rem;
 }
 
+.product-offer{
+  margin-left: 1rem;
+  margin-top: .5rem;
+  font-family: 'Poppins';
+}
+
+@media (min-width: 768px){
+.product-offer {
+    margin-top: 1rem;
+  }
+}
+
+.product-offer-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-offer-title h2{
+  --tw-text-opacity: 1;
+  color: rgb(7 7 77/var(--tw-text-opacity));
+  font-weight: 600;
+  font-size: 24px;
+  text-align: left;
+}
+
+@media (min-width: 768px){
+.product-offer-title h2{
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    width: 50%;
+  }
+}
+
+.product-offer-all-cards{
+  display: flex;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  margin-top: 1rem;
+  align-items: center;
+  
+}

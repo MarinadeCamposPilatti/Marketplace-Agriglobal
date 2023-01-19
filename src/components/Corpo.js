@@ -1,10 +1,13 @@
 import './Corpo.css';
-import CardMenuAuto from './MenuAuto.js';
+import CardMenuAuto from './MenuAuto';
+import CardProductOffer from './ProductOffer';
+import CardProductForSale from './ProductForSale';
 
 import BoneMeetFlour2 from './assets/bonemeetflour2.png';
 import BoneMeetFlour from './assets/bonemeetflour.png';
 import Chitosan from './assets/chitosan.png';
-import ChickenFlour from './assets/chickenflour.png'
+import ChickenFlour from './assets/chickenflour.png';
+import ChickenFlour2 from './assets/chickenflour2.png';
 import ChickenMeet from './assets/chickenmeet.png';
 import Coffee from './assets/coffee.png';
 import Compare from './assets/compare.png';
@@ -350,1340 +353,114 @@ const Corpo = () => {
 
                         
                         <div className="grid1 grid-container">
-                            <div className="grid-item">
-                                <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={Chicken} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Supply to feed mills
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Poultry by-product meal 65% Canada
-                                        </p>
-                                        <p className='description'>
-                                        is produced mainly as a by product of chicken meat, Then heat treatment, 
-                                        drying and grinding according to European technology. It’s an excellent
-                                        source of prote...
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
+                            <CardProductForSale image={Chicken} category="Supply to feed mills" 
+                            title="Poultry by-product meal 65% Canada" description="is produced mainly as a by 
+                            product of chicken meat, Then heat treatment, drying and grinding according to European 
+                            technology. It’s an excellent source of prote..."/>
 
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
+                            <CardProductForSale image={Example3} category="Supply to feed mills" title="Example 
+                            Product1" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                            quis nostru..."/>
 
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={MeatBone} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Supply to feed mills
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Meat and bone meal (45/50% protein)
-                                        </p>
-                                        <p className='description'>
-                                        Meat and bone meal (MBM) is a natural source of protein and minerals including calcium, phosphorus and fat, which is used as an ingredients for the production of balanced animal feed, being commercialized for pet food, poultry, swine, fish, and other non-ruminant species.The raw material is collected from slaughterhouses inspected (SIF) and is 100% bovine processing at our plant.The meal is free from any additive that improve your natural protein.
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
+                            <CardProductForSale image={Example2} category="Supply to feed mills" title="Example 
+                            product with large name" description="Lorem Ipsum is simply dummy text of the printing 
+                            and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
+                            since the 1500s, when an..."/>
 
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
+                            <CardProductOffer image={Example3} category="Grains and seeds" title="Name product with 
+                            extra title" description="Texto corto aleatorío."/>
 
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={Tallow} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Supply to feed mills
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Tallow
-                                        </p>
-                                        <p className='description'>
-                                        Tallow for biodiesel purposes and animal nutrition
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
+                            <CardProductOffer image={MeatFree} category="Supply to feed mills" title="Meat free" 
+                            description="It's a free meat for all world"/>
 
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
+                            <CardProductOffer image={FreeFish} category="Supply to feed mills" title="FreeFish" 
+                            description="Hi, only example"/>
 
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={FishFlour} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Animal proteins
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Harina de pescado
-                                        </p>
-                                        <p className='description'>
-                                        Harina de pescado
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
-
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
-
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={PalmOil} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Supply to feed mills
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Palm oil
-                                        </p>
-                                        <p className='description'>
-                                        Palm oil is an edible vegetable oil derived from the mesocarp (reddish 
-                                        pulp) of the fruit of the oil palms.The oil is used in food manufacturing
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
-
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
-
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={Dog} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Supply to feed mills
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Alimento para perros
-                                        </p>
-                                        <p className='description'>
-                                        Alimento para perros
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
-
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
-
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={Chitosan} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Biopolymers
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Chitosan biotech
-                                        </p>
-                                        <p className='description'>
-                                        Chitosan is a non-toxic, biodegradable, biocompatible polymer\nproduced by natural renewable sources, whose properties have\nbeen explored in industrial applications.
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
-
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
-
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={Palative} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Supply to feed mills
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Palative-Gs
-                                        </p>
-                                        <p className='description'>
-                                        es un producto obtenido por hidrólisis enzimática de subproductos\nfrescos de Jibia o Calamar Gigante (Dosidicus gigas), con un alto contenido de\npéptidos bioactivos de bajo peso molecular, un perfil de aminoácidos balanceado\ny destacando como característica principal la presencia de ácidos grasos omega-3,\nEPA y DHA.
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
-
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
-
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={PoultryFat} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Supply to feed mills
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Poultry fat
-                                        </p>
-                                        <p className='description'>
-                                        Very good poultry fat
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
-
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
-
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <CardProductForSale  image={ChickenFlour2} category="Supply to feed mills" title="Harina 
+                            de pollo" description="Descripción corta"/>
+                            
+                            <CardProductForSale image={PalmOil} category="Supply to feed mills" 
+                            title="Palm oil" description="Palm oil is an edible vegetable oil derived from the 
+                            mesocarp (reddish pulp) of the fruit of the oil palms.The oil is used in food 
+                            manufacturing"/>
+                            
+                            <CardProductForSale image={Dog} category="Supply to feed mills" 
+                            title="Alimento para perros" description="Alimento para perros"/>
+                        
+                            
                         </div>
 
                         <div className="grid2 grid-container">
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={PoultryBrazil} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Supply to feed mills
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Poultry Meal - Brazil 60%
-                                        </p>
-                                        <p className='description'>
-                                        High-Value Poultry Protein Meal Form Brazil
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
-
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
-
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={Coffee} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Coffee and tea
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Coffe not roasted
-                                        </p>
-                                        <p className='description'>
-                                        Coffe not roasted
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
-
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
-
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={TimutPepper} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Grains and seeds
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Timut pepper
-                                        </p>
-                                        <p className='description'>
-                                        It is pungent and spicy taste of timmur produced enzymes in the mouth that facilitates digestive process and controls gas in the stomach. It is antiseptic, antispasmodic and stimulant. It also used for treating toothache. It is also source of vitamin A, phosphorus, thiamin, phytosterols and carotens.
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
-
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
-
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={ChickenMeet} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Supply to feed mills
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Carne de Frango
-                                        </p>
-                                        <p className='description'>
-                                        Carne de frango orgânica
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
-
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
-
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={MeatFree} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Supply to feed mills
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Meat free
-                                        </p>
-                                        <p className='description'>
-                                        Carne de frango orgânica
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
-
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
-
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={FishOil} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Supply to feed mills
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Aceite de pescado
-                                        </p>
-                                        <p className='description'>
-                                        Aceite de tilapia 902 calorías /100 gms
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
-
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
-
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={FreeFish} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Supply to feed mills
-                                        </p>
-                                        <p className='cardTitle'>
-                                        FreeFish
-                                        </p>
-                                        <p className='description'>
-                                        Hi, only example
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
-
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
-
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={BoneMeetFlour} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Supply to feed mills
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Harina de carne y hueso 50% (R)
-                                        </p>
-                                        <p className='description'>
-                                        Harina de carne de rumiante del 50%, excelentes condiciones de calidad
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
-
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
-
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={ChickenFlour} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Supply to feed mills
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Harina de aves 55% (byprodoct meal)
-                                        </p>
-                                        <p className='description'>
-                                        Harina de aves 55%
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
-
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
-
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <CardProductForSale image={PoultryBrazil} category="Supply to feed mills" 
+                            title="Poultry Meal - Brazil 60%" description="High-Value Poultry Protein Meal Form 
+                            Brazil"/>
+                            
+                            <CardProductForSale image={MeatBone} category="Supply to feed mills" 
+                            title="Meat and bone meal (45/50% protein)" description="Meat and bone meal (MBM) is a 
+                            natural source of protein and minerals including calcium, phosphorus and fat, which is 
+                            used as an ingredients for the production of..."/>
+                            
+                            <CardProductForSale image={TimutPepper} category="Grains and seeds" 
+                            title="Timut pepper" description="It is pungent and spicy taste of timmur produced 
+                            enzymes in the mouth that facilitates digestive process and controls gas in the stomach. 
+                            It is antiseptic..."/>
+                            
+                            <CardProductForSale image={ChickenMeet} category="Supply to feed mills" 
+                            title="Meat Free" description="Carne de frango orgânica"/>
+                            
+                            
+                            <CardProductForSale image={FishFlour} category="Animal proteins" 
+                            title="Harina de pescado" description="Harina de pescado"/>
+                            
+                            <CardProductForSale image={FishOil} category="Supply to feed mills" 
+                            title="Aceite de Pescado" description="Aceite de tilapia 902 calorías /100 gms"/>
+                            
+                            <CardProductForSale image={Tallow} category="Supply to feed mills" 
+                            title="Tallow" description="Tallow for biodiesel purposes and animal nutrition"/>
+                            
+                            <CardProductForSale image={BoneMeetFlour} category="Supply to feed mills" 
+                            title="Harina de carne y hueso 50% (R)" description="Harina de carne de rumiante del 
+                            50%, excelentes condiciones de calidad"/>
+                            
+                            <CardProductForSale image={ChickenFlour} category="Supply to feed mills" 
+                            title="Harina de aves 55% (byprodoct meal)" description="Harina de aves 55%"/>
+                            
                         </div>
 
                         <div className="grid3 grid-container">
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={PoultryArgentina} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Supply to feed mills
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Poultry Meal 60% Argentina
-                                        </p>
-                                        <p className='description'>
-                                        Quality Product
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
+                            <CardProductForSale image={Coffee} category="Coffee and tea" 
+                            title="Coffe not roasted" description="Coffe not roasted"/>
 
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
+                            <CardProductForSale image={Chitosan} category="Biopolymers" 
+                            title="Chitosan biotech" description="Chitosan is a non-toxic, biodegradable, 
+                            biocompatible polymer produced by natural renewable sources, whose properties have been 
+                            explored in industrial applications."/>
 
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={PoultryMeal} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Supply to feed mills
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Poultry by product meal
-                                        </p>
-                                        <p className='description'>
-                                        The best poultry
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
+                            <CardProductForSale image={Palative} category="Supply to feed mills" 
+                            title="Palative-Gs" description="es un producto obtenido por hidrólisis enzimática de 
+                            subproductos frescos de Jibia o Calamar Gigante (Dosidicus gigas), con un alto contenido 
+                            de péptidos..."/>
 
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
+                            <CardProductForSale image={PoultryArgentina} category="Supply to feed mills" 
+                            title="Poultry Meal 60% Argentina" description="Quality Product"/>
+                            
+                            <CardProductForSale image={PoultryMeal} category="Supply to feed mills" 
+                            title="Poultry by product meal" description="The best poultry"/>
+                        
+                            <CardProductForSale image={BoneMeetFlour2} category="Supply to feed mills" 
+                            title="Farinha de carne e osso bovino" description="Farinha de carne e osso 50%"/>
+                            
+                            <CardProductForSale image={FeatherMeal} category="Supply to feed mills" title="Feather 
+                            meal" description="Describe product"/>
+                            
+                            <CardProductForSale image={MBM} category="Supply to feed mills" title="Mbm" 
+                            description="Great Product From Brazil"/>
+                            
+                            
 
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={BoneMeetFlour2} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Supply to feed mills
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Farinha de carne e osso bovino
-                                        </p>
-                                        <p className='description'>
-                                        Farinha de carne e osso 50%
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
-
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
-
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={FeatherMeal} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Supply to feed mills
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Feather meal
-                                        </p>
-                                        <p className='description'>
-                                        Describe product
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
-
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
-
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={MBM} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Supply to feed mills
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Mbm
-                                        </p>
-                                        <p className='description'>
-                                        Great Product From Brazil
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
-
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
-
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={Meat} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Supply to feed mills
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Meat
-                                        </p>
-                                        <p className='description'>
-                                        Dasdsa
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
-
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
-
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={Example1} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Supply to feed mills
-                                        </p>
-                                        <p className='cardTitle'>
-                                        UI Testing produts, cards, sizes
-                                        </p>
-                                        <p className='description'>
-                                        There are many variations of passages of Lorem Ipsum available, but the 
-                                        majority have suffered alteration in some form, by injected humour, or 
-                                        randomised words which don't look even slightly believable. If you are 
-                                        going to use a passage of Lorem Ipsum, you need to be sure there isn't 
-                                        anything embarrassing hidden in the middle of text. All the Lorem Ipsum 
-                                        generators on the Internet tend to repeat predefined chunks as necessary, 
-                                        making this the first true generator on the Internet. It uses a dictionary 
-                                        of over 200 Latin words, combined with a handful of model sentence 
-                                        structures, to generate Lorem Ipsum which looks reasonable. The generated 
-                                        Lorem Ipsum is therefore always free from repetition, injected humour, or 
-                                        non-characteristic words etc.
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
-
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
-
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid-item">
-                            <div className='hearticon'>
-                                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={Example2} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Supply to feed mills
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Example product with large name
-                                        </p>
-                                        <p className='description'>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 
-                                        1500s, when an unknown printer took a galley of type and scrambled it to 
-                                        make a type specimen book. It has survived not only five centuries, but 
-                                        also the leap into electronic typesetting, remaining essentially 
-                                        unchanged. It was popularised in the 1960s with the release of Letraset 
-                                        sheets containing Lorem Ipsum passages, and more recently with desktop 
-                                        publishing software like Aldus PageMaker including versions of Lorem 
-                                        Ipsum.
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
-
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
-
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="grid-item">
-
-                                <div className='hearticon'>
-                                    <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                    testid="FavoriteBorderOutlinedIcon"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1. 1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
-                                </div>
-                                <div className='content'>
-                                    <button>
-                                        <img src={Example3} className="imageCardCompras"></img>
-                                    </button>
-                                
-                                    <div className='textCard'>
-                                        <p className='cardCategory'>
-                                        Supply to feed mills
-                                        </p>
-                                        <p className='cardTitle'>
-                                        Example product1
-                                        </p>
-                                        <p className='description'>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-                                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
-                                        est laborum.
-                                        </p>
-                                        <div className='signin'>
-                                            <a href='#'><span>Sign in</span></a>
-                                            <p> to see</p>
-                                        </div>
-                                    </div>
-
-                                    <div className='buttonsbuycompare'>
-                                        <div className='compare'>
-                                            <button>
-                                                <img src={Compare} alt="compare-symbol" />
-                                            </button>
-                                        </div>
-
-                                        <div className='trolley'>
-                                        <button>
-                                            <svg   
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-
-                                            testid="ShoppingCartOutlinedIcon"><path d="M15.55 13c.75 0 1.41-.41 
-                                            1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 
-                                            7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2
-                                            H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 
-                                            2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-                                            2-.9 2-2-.9-2-2-2z"></path></svg>Add cart
-                                        </button>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
+                            <CardProductForSale image={PoultryFat} category="Supply to feed mills" 
+                            title="Poultry fat" description="Very good poultry fat"/>
 
                         </div>
                         
@@ -1693,6 +470,27 @@ const Corpo = () => {
                 </div>
     
             </section>
+
+
+            <section className='product-offer'>
+                <div className='product-offer-title'>
+                    <h2>Product Offer</h2>
+                </div>
+
+                <div className='product-offer-all-cards'>
+                    <CardProductOffer image={Example3} category="Grains and seeds" title="Name product with extra title" description="Texto corto aleatorío."/>
+                    <CardProductOffer image={FreeFish} category="Supply to feed mills" title="FreeFish" description="Hi, only example"/>
+                    <CardProductOffer image={MeatFree} category="Supply to feed mills" title="Meat free" description="It's a free meat for all world"/>
+                    <CardProductForSale  image={ChickenFlour2} category="Supply to feed mills" title="Harina de pollo" description="Descripción corta"/>
+                </div>
+            
+
+
+
+            </section>
+
+            
+
         </div>
     )
 }
