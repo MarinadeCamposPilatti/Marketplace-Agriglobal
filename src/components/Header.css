@@ -9,6 +9,7 @@ a{
     font-weight: 600;
     justify-content: space-between;
     align-items: center;
+    height: 3.5em;
 }
 
 
@@ -18,6 +19,8 @@ a{
     object-fit: fill;
     cursor: pointer;
     padding-left: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .nav-links{
@@ -30,12 +33,9 @@ a{
 }
 
 .nav-links li a{
-    margin: 0.1em 0.5em 3em 0.1em;
+    margin: 3em 0.5em 3em 0.1em;
+    padding: 0.2em 0.5em 0.5em 0.5em;
     border-radius: 20%;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    padding-top: 0.4em;
-    padding-bottom: 0.5em;
     --tw-text-opacity: 1;
     color: rgb(0 102 255/var(--tw-text-opacity));
     background-color: initial;
@@ -74,7 +74,8 @@ a{
 }
 
 
-.nav-links li input{
+.search{
+    display: flex;
     width: 18em;
     border-top-left-radius: 1.5em;
     border-bottom-left-radius: 1.5em;
@@ -82,19 +83,24 @@ a{
     font-size: 0.875em;
     padding: 0.8em 0.75em;
     text-align: left;
-    margin-left: 45em;
+    margin-left: 7em;
+    z-index: -1;
 
 }
 
 .botão1{
+    display: flex;
     text-transform: none;
     cursor: pointer;
     --tw-bg-opacity: 1;
     background-color: rgb(0 102 255/var(--tw-bg-opacity));
     border-radius: 5em;
-    padding : 0.5em 0.5em;
+    padding : 0.5em;
     align-items: center;
     border-color: rgb(0 102 255/var(--tw-bg-opacity));
+    margin-right: 33em;
+    z-index: 0;
+    
 
 }
 
