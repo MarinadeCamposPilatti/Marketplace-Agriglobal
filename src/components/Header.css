@@ -1,0 +1,112 @@
+a{
+    text-decoration: none;
+}
+
+.Header{
+    background-color: #D6E7FF;
+    display: flex;
+    font-family: 'Poppins';
+    font-weight: 600;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo{
+    width: auto;
+    height: 3.5rem;
+    object-fit: fill;
+    cursor: pointer;
+    padding-left: 100%;
+}
+
+.nav-links{
+    list-style: none;
+    position: relative;
+}
+
+.nav-links li{
+    display: inline-block;
+}
+
+.nav-links li a{
+    margin: 0.1em 0.5em 3em 0.1em;
+    border-radius: 20%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.4em;
+    padding-bottom: 0.5em;
+    --tw-text-opacity: 1;
+    color: rgb(0 102 255/var(--tw-text-opacity));
+    background-color: initial;
+}
+
+
+.nav-links  li a:focus{
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    /*filter: invert(99%) sepia(16%) saturate(2%) hue-rotate(157deg) brightness(105%) contrast(100%);*/
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 102 255/var(--tw-bg-opacity));
+    /*filter: invert(32%) sepia(81%) saturate(5174%) hue-rotate(210deg) brightness(100%) contrast(110%);*/
+}
+
+
+
+
+.css-vubbuv a{
+    fill: rgb(0 102 255/var(--tw-text-opacity));
+    vertical-align: middle;
+    user-select: none;
+    display: inline-block;
+    flex-shrink: 0;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    margin: 0 2em 0 2em;
+}
+
+.css-vubbuv a:focus{
+    fill: rgb(255 255 255/var(--tw-text-opacity));
+}
+
+.css-vubbuv a svg{
+    width: 1.5em;
+    height: 1.5em;
+}
+
+
+.nav-links li input{
+    width: 18em;
+    border-top-left-radius: 1.5em;
+    border-bottom-left-radius: 1.5em;
+    border-color:rgb(255 255 255/var(--tw-text-opacity));
+    font-size: 0.875em;
+    padding: 0.8em 0.75em;
+    text-align: left;
+    margin-left: 45em;
+
+}
+
+.botão1{
+    text-transform: none;
+    cursor: pointer;
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 102 255/var(--tw-bg-opacity));
+    border-radius: 5em;
+    padding : 0.5em 0.5em;
+    align-items: center;
+    border-color: rgb(0 102 255/var(--tw-bg-opacity));
+
+}
+
+.lupa {
+        user-select: none;
+        width: 1em;
+        height: 1em;
+        display: inline-block;
+        fill: currentcolor;
+        flex-shrink: 0;
+        transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        font-size: 1.5rem;
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255/var(--tw-text-opacity));
+}
