@@ -1,0 +1,55 @@
+.CardDetails{
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--tw-bg-opacity));
+    border-radius: 1.5em;
+    margin-top: 3rem;
+    margin-left: 2em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    width: 20em;
+    height: 4em;
+    display: flex;
+    align-items:center;
+    padding-left: 2em;
+    
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    object-fit: scale-down;
+    margin-top: 100px;
+    object-position: 10%;
+}
+
+
+h2{
+    --tw-text-opacity: 1;
+    color: rgb(115 115 115/var(--tw-text-opacity));
+    font-size: 1.125em;
+    line-height: 1.75em;
+    height: 60px;
+    margin: 0;
+    font-weight: inherit;
+}
+
+h4{
+    font-weight: 700;
+    font-style: italic;
+    --tw-text-opacity: 1;
+    color: rgb(115 115 115/var(--tw-text-opacity));
+    font-size: 0.875em;
+    line-height: 1.25em;
+}
+
+a{
+    font-weight: 500;
+    --tw-text-opacity: 1;
+    color: rgb(0 102 255/var(--tw-text-opacity));
+}
+
+.text{
+    margin-right: 4em;
+    display: block;
+
+}
